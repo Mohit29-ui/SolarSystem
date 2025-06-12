@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System 3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <canvas id="solar-system"></canvas>
+        <div id="controls">
+            <h2>Solar System Controls</h2>
+            <div id="speed-controls">
+                <div class="control-group">
+                    <label for="planet-select">Select Planet:</label>
+                    <select id="planet-select">
+                        <option value="all">All Planets</option>
+                        <!-- Planet options will be added dynamically -->
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="speed-multiplier">Speed Multiplier:</label>
+                    <input type="range" id="speed-multiplier" min="0" max="10" step="0.1" value="1">
+                    <span id="speed-value">1x</span>
+                </div>
+            </div>
+            <div id="global-controls">
+                <button id="pause-resume">Pause</button>
+                <button id="theme-toggle">Toggle Theme</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html> 
